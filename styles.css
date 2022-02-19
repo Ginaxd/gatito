@@ -2,16 +2,40 @@
 padding: 0px;
 margin: 0px;
 }
-#etiqueta{
-    color: yellowgreen;
+
+.contenedor{
+    height: 100vh; /* vh hac referencia a la altura de nuestro monitor-navegador, 100vh va a cubrir toda nuestra pantalla del navegador*/
+    display:flex;/*de que manera se van a acomodar los elementos dentro del contenedor, en este caso flex */
+    flex-direction: row;
+    padding: 20px;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://img.freepik.com/vector-gratis/diseno-patron-pow-colorido-lindo-gatito_1017-14710.jpg?size=338&ext=jpg&ga=GA1.2.2098660052.1638921600");
+    background-size: cover;
 }
 
 .cuadro{
-    background-color: brown;
-    margin: 20px;
-    padding: 20px;
+  width: 600px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px; /*espacio entre uno y otros*/
+  background-color:rgb(58, 6, 56) ;
+  
 }
-p{
-    color: darkmagenta;
-    font-size: 20px;
+.cuadro div{
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.cuadro div:hover{
+    background-color: rgba(128, 177, 209, 0.466); /*cuando el cursor se pone cerca del div se pone de color*/
+    cursor: pointer; /*pone una manita de selección cuando el cursor pasa por el div*/
 }
