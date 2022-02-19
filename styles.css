@@ -1,3 +1,17 @@
 * {
-background-color: blueviolet;
+padding: 0px;
+margin: 0px;
+}
+#etiqueta{
+    color: yellowgreen;
+}
+
+.cuadro{
+    background-color: brown;
+    margin: 20px;
+    padding: 20px;
+}
+p{
+    color: darkmagenta;
+    font-size: 20px;
 }
