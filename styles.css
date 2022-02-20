@@ -1,6 +1,7 @@
 * {
 padding: 0px;
 margin: 0px;
+box-sizing: border-box;
 }
 
 .contenedor{
@@ -11,18 +12,22 @@ margin: 0px;
     font-size: 40px;
     justify-content: center;
     align-items: center;
-    background-image: url("https://img.freepik.com/vector-gratis/diseno-patron-pow-colorido-lindo-gatito_1017-14710.jpg?size=338&ext=jpg&ga=GA1.2.2098660052.1638921600");
+    background-image: url("https://i.pinimg.com/736x/51/41/ef/5141efa135636e4e09acdd53583b8628.jpg");
     background-size: cover;
+}
+#titulo{
+ 
 }
 
 .cuadro{
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 10px; /*espacio entre uno y otros*/
   background-color:rgb(58, 6, 56) ;
+  position: relative;
   
 }
 .cuadro div{
@@ -38,4 +43,51 @@ margin: 0px;
 .cuadro div:hover{
     background-color: rgba(128, 177, 209, 0.466); /*cuando el cursor se pone cerca del div se pone de color*/
     cursor: pointer; /*pone una manita de selección cuando el cursor pasa por el div*/
+}
+button{
+    padding: 20px 10px;
+    background-color: brown;
+    color: bisque;
+    outline: none;
+    border: 0px;
+    border-radius: 8px;
+    width: 200px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(151, 106, 115);
+}
+
+
+.lineContainer {
+    position: relative;
+}
+
+#linea{
+    position: absolute;
+    display: block;
+    background-color: rgb(128, 11, 11);
+}
+
+.lineHorizontal {
+    height: 20px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.lineVertical {
+    position: absolute;
+    display: block;
+    height: 100%;
+    background-color: red;
+    width: 10px;
+    top: 0px;
+    left: 0px;
+
 }
