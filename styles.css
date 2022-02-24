@@ -7,7 +7,7 @@ box-sizing: border-box;
 .contenedor{
     height: 100vh; /* vh hac referencia a la altura de nuestro monitor-navegador, 100vh va a cubrir toda nuestra pantalla del navegador*/
     display:flex;/*de que manera se van a acomodar los elementos dentro del contenedor, en este caso flex */
-    flex-direction: row;
+    flex-direction: column;
     padding: 20px;
     font-size: 40px;
     justify-content: center;
@@ -71,7 +71,12 @@ button:hover {
 #linea{
     position: absolute;
     display: block;
+    height: 10px;
     background-color: rgb(128, 11, 11);
+    width: 100%;
+    top: 80px;
+    left: 0px;
+    z-index: 2;
 }
 
 .lineHorizontal {
